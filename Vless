@@ -1,0 +1,51 @@
+{
+		"inbounds": [],
+		"outbounds": [
+				{
+						"mux": {
+								"enabled": false
+						},
+						"protocol": "vless",
+						"settings": {
+								"vnext": [
+										{
+												"address": "m.googleapis.com",
+												"port": 443,
+												"users": [
+														{
+																"encryption": "none",
+																"id": "36459fd0-0c89-4733-b20e-067ffc341bd2",
+																"level": 8
+														}
+												]
+										}
+								]
+						},
+						"streamSettings": {
+								"network": "ws",
+								"security": "tls",
+								"tlsSettings": {
+										"allowInsecure": true,
+										"serverName": "vpnprovip-555480279676.asia-southeast1.run.app"
+								},
+								"wsSettings": {
+										"headers": {
+												"Host": "vpnprovip-555480279676.asia-southeast1.run.app"
+										},
+										"path": "/TG-@Not_Ragnar"
+								}
+						},
+						"tag": "VLESS"
+				}
+		],
+		"policy": {
+				"levels": {
+						"8": {
+								"connIdle": 300,
+								"downlinkOnly": 1,
+								"handshake": 4,
+								"uplinkOnly": 1
+						}
+				}
+		}
+}
